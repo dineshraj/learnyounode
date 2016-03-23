@@ -7,7 +7,7 @@ http.get(process.argv[2], function (response) {
         .on('data', function (data) {
             console.log(data);
         })
-        .on('error', function (data) {
-            console.error(data);
+        .on('error', function (err) {
+            console.error(err);
         });
 });
